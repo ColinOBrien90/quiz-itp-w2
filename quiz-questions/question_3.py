@@ -39,7 +39,9 @@ def eldest_customer_per_state(customers):
     }
     """
     # Write your code here
-    pass
+    new_dict = {}
+    for key, value in customers.items():
+        
 
 
 class EldestCustomerTestCase(unittest.TestCase):
