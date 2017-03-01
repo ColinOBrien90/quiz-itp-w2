@@ -29,7 +29,17 @@ def number_of_customers_per_state(customers):
     }
     """
     # Write your code here
-    pass
+    new_dict = {}
+    for key, values in customers.items():
+        count = 0
+        for k, v in values.items():    
+            if k['name'] != None:
+                count += 1
+        new_dict[key] = count
+    return new_dict
+            
+            
+        
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):
